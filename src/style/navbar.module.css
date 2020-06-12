@@ -1,0 +1,21 @@
+.nav {
+    position: fixed;
+    height: 130px;
+    top: 0;
+    overflow: hidden;
+    padding: 3px;
+    width: 100vw;
+    z-index: 10;
+}
+
+.links{
+    width: 250px;
+    font-size: 1.7rem;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.links span{
+    font-weight: bolder;
+    font-style: italic;
+}

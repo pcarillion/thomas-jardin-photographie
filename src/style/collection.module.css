@@ -1,0 +1,87 @@
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 200px;
+}
+
+
+
+.photo{
+    height: 70vh;
+}
+
+picture:hover {
+    /* cursor: pointer; */
+}
+
+.firstRank{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.firstRank > div {
+    height: 100%;
+    width: 50%;
+}
+
+.photo1{
+    height: 70vh;
+}
+
+.photo2{
+    height: 60vh;
+}
+
+.photo3{
+    height: 70vh;
+    margin-left: 30vw;
+    margin-top: 1vh;
+}
+
+.photo4{
+    height: 70vh;
+    margin-top: 1vh;
+    margin-right: 30vw;
+
+}
+
+.photo5 {
+    margin-bottom: 5vh;
+    height: 70vh;
+    margin-top: 20vh;
+}
+
+
+.photo6 {
+    margin-top : 1vh;
+}
+
+.photo7 {
+    margin-left: 20vw;
+    margin-top: 1vh;
+}
+
+.photo8 {
+    margin-right: 25vw;
+    margin-top: 1vh;
+}
+
+.close {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 22;
+    border: none;
+    background-color: white;
+    color: grey;
+    font-size: 2rem;
+}
+
+.close:hover{
+    color: black;
+    cursor: pointer;
+}
