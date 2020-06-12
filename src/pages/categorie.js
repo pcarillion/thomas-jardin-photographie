@@ -33,15 +33,13 @@ query{
 
 const Categorie = (props) => {
 
-    console.log(props.location.state.data)
-
-    const categorie = props.location.state.data;
+    let categorie = props.location.state.data ?props.location.state.data : null ;
 
     const collections = useStaticQuery(getData)
 
     console.log(collections.collections.edges)
     
-    const selectedCollections = collections.collections.edges.filter(collection => collection.node.categorie === categorie)
+    let  selectedCollections = categorie ? collections.collections.edges.filter(collection => collection.node.categorie === categorie) : null;
 
     console.log(selectedCollections)
 
@@ -50,14 +48,14 @@ const Categorie = (props) => {
     return (
         <Layout>
             <div className={styles.container}>
-                {selectedCollections.map((collection, i) => {
+                {categorie ? selectedCollections.map((collection, i) => {
                     return (
                         <div className={styles.imageDiv}>
                             <AniLink to={`/collection/${collection.node.slug}`}><Img className={styles.image} objectFit="contain" fluid={collection.node.mainPicture.fluid}/></AniLink>
                             <h5 className={styles.title}>{collection.node.titre}</h5>
                         </div>
                     )
-                })}
+                }) : <div>Il n'y a pas encore de collections dans cette catégorie</div>}
             </div>
         </Layout>
     )
