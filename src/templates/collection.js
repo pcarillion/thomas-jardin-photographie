@@ -4,13 +4,15 @@ import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import {graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image/withIEPolyfill'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // css
 import styles from '../style/collection.module.css'
 
 // js
 import Layout from '../components/Layout'
 import SinglePicture from '../components/SinglePicture'
+import SEO from '../components/SEO'
 
 // data
 
@@ -50,9 +52,9 @@ const Collection = ({data}) => {
 
     return (
         <Layout>
+            <SEO title={collection.titre}/>
             <div className={styles.container}>
                 <div className={styles.firstRank}>
-
                     <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[0].fluid, 0)}>
                         <Img fluid={collection.galerie[0].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo1}`} alt={collection.galerie[0].title}/>
                     </div>

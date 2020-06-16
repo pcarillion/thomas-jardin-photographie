@@ -1,3 +1,39 @@
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
 .mainDiv {
     position: fixed;
     height: 100vh;
@@ -10,12 +46,20 @@
     justify-content: space-between;
     align-items: center;
     z-index: 21;
+    /* -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
+    /* -webkit-animation: fade-out 1s ease-out both;
+	        animation: fade-out 1s ease-out both; */
 }
 
 .pic {
     height: 96%;
     width: 90%;
     margin: 2%;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    /* -webkit-animation: fade-out 1s ease-out both;
+	        animation: fade-out 1s ease-out both; */
 }
 
 .button {

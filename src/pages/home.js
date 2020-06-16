@@ -10,6 +10,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 // js
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 // data
 
@@ -40,6 +41,7 @@ const Home = () =>  {
 
     return (
     <Layout>
+        <SEO title='Thomas Jardin Photographie'/>
         <div className={styles.homeDiv}>
             <div className={styles.rank}>
                 <div className={styles.leftDiv1}>

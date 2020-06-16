@@ -3,7 +3,9 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import './layout.css'
 
-// import '../sass/layout.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Layout = ({children}) => {
     return (

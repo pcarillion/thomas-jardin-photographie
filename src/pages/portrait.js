@@ -10,6 +10,7 @@ import Img from 'gatsby-image/withIEPolyfill'
 // js 
 import Layout from '../components/Layout'
 import CategorieList from '../components/CategorieList'
+import SEO from '../components/SEO'
 
 
 const getData = graphql`
@@ -38,6 +39,7 @@ const Portrait = () => {
 
     return (
         <Layout>
+            <SEO title='Portrait'/>
             <CategorieList data={collections}/>
         </Layout>
     )

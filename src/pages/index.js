@@ -2,6 +2,7 @@ import React from "react"
 
 import { graphql, useStaticQuery } from "gatsby"
 import Img from 'gatsby-image/withIEPolyfill'
+import SEO from '../components/SEO'
 
 
 // css
@@ -24,6 +25,7 @@ export default function Index() {
   console.log(logo.logo.edges[0].node.logo.fluid)
 
   return <div className="index-div column-center-center">
+          <SEO title='Thomas Jardin Photographie'/>
           <a href="/home">
             <Img className='main-logo' objectFit="contain" fluid={logo.logo.edges[0].node.logo.fluid}/>
           </a>
