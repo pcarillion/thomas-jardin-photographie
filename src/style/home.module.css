@@ -120,3 +120,72 @@
     height: 80vh;
     margin-right: 5vw;
 } 
+
+
+@media screen and (max-width: 1200px) {
+
+    .home-div{
+        margin-top: 120px;
+    }
+
+    .rank{
+        height: 30vh;
+    }
+
+    .left-div-1 {
+        height: 100%;
+    }
+
+    .image-1 {
+        height: 30vh;
+    }
+    
+    .image-2 {
+        height: calc(70/100 * 30vh)
+    }
+
+    .left-div-2 {
+        height: 30vh;
+    }
+    
+    .image-3 {
+        height: calc(60/100 * 30vh);
+    }
+    
+    .image-4 {
+        height: calc(60/100 * 30vh);
+    }
+    
+    .image-5 {
+        height: 30vh;
+    }
+
+    .left-div-3 {
+        height: 30vh;
+        margin-bottom: 10vh;
+    }
+
+    .image-6 {
+        height: 30vh;
+    }
+
+        
+    .image-7 {
+        height: 30vh;
+        margin-bottom: 1vh;
+
+    }
+
+    .image-8 {
+        height: 30vh;
+        margin-right: 5vw;
+    } 
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .home-div{
+        margin-top: 80px;
+    }
+}

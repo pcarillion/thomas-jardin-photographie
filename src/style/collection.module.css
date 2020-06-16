@@ -51,13 +51,14 @@ picture:hover {
 }
 
 .lastRank{
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-evenly;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .lastRank > div {
@@ -78,7 +79,6 @@ picture:hover {
 
 .photo7 {
     margin-left: 20vw;
-    margin-top: 1vh;
 }
 
 .photo8 {
@@ -100,4 +100,28 @@ picture:hover {
 .close:hover{
     color: black;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container{
+        padding-top: 140px;
+    }
+
+    .photo {
+        height: 30vh
+    }
+
+    .photo-2 {
+        height:25vh;
+    }
+
+    .firstRank, .lastRank{
+        height: 30vh;
+    }
+
+    .photo-5{
+        margin-top: 1vh;
+    }
+
 }

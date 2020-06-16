@@ -26,3 +26,19 @@
     font-style: italic;
     font-weight: normal;
 }
+
+@media screen and (max-width: 650px) {
+
+    .container{
+        margin-top: 15vh;
+    }
+
+    .image-div{
+        height: 20vh;
+        margin-bottom: 5vh;
+    }
+
+    .image{
+        max-height: 20vh;
+    }
+}

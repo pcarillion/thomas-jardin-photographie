@@ -47,8 +47,8 @@ const Home = () =>  {
                 <div className={styles.leftDiv1}>
                     <AniLink fade to={`/collection/${galerie[0].node.slug}`}>
                         <Img className={styles.image1} objectFit="contain" fluid={galerie[0].node.mainPicture.fluid}/>
+                        <p className={styles.title}>{galerie[0].node.titre}</p>
                     </AniLink>
-                    <p className={styles.title}>{galerie[0].node.titre}</p>
                 </div>
                 <div className={styles.rightDiv1}>
                     <AniLink fade to={`/collection/${galerie[1].node.slug}`}>

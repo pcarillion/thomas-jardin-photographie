@@ -31,3 +31,17 @@
 .logo {
     height: 100%;
 }
+
+@media screen and (max-width: 650px) {
+    .links {
+        font-size: 1rem;
+        width: 160px;
+        margin-right: 10px;
+        margin-top: 10px;
+        line-height: 1.25;
+    }
+
+    .logo-div{
+        width: 40%;
+    }
+}

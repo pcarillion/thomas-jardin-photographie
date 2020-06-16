@@ -7,6 +7,7 @@
 
 .footer-div p {
      margin: 20px 0;
+     text-align: center;
 }
 
 .logo-div{
@@ -18,4 +19,23 @@
 .logo-dev {
     height: 60px;
     width: 60px
+}
+
+@media screen and (max-width: 650px) {
+
+    .footer-div p {
+        font-size: 0.8rem;
+   }
+
+   .logo-div{
+        height: 30px;
+        width: 150px;
+        margin-bottom: 20px
+    }
+
+    .log-dev {
+        height: 30px;
+        width: 30px;
+    }
+
 }

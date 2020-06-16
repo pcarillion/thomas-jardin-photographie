@@ -23,7 +23,7 @@ const SinglePicture = ({photo, galerie, i}) => {
     return (
         <div className={styles.mainDiv}>
             {index > 0 ? <button className={styles.button} onClick={() => {setIndex(index-1)}}>&lsaquo;</button> :  <button className={styles.button}></button> }
-            <Img data-aos="fade-up" fluid={picture} objectFit="contain" className={styles.pic} alt={galerie[0].title}/>
+            <Img fluid={picture} objectFit="contain" className={styles.pic} alt={galerie[0].title}/>
             {index +1  < galerie.length  ?  <button className={styles.button} onClick={() => {setIndex(index+1)}}>&rsaquo;</button> :  <button className={styles.button}></button>}
         </div>
     )
