@@ -11,6 +11,7 @@
 .image-div{
     height: 70vh;
     width: 40vw;
+    margin-bottom: 10vh;
 }
 
 .image{
@@ -21,4 +22,7 @@
 .title {
     text-align: center;
     margin: 0;
+    font-family: 'Crimson Text', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
 }

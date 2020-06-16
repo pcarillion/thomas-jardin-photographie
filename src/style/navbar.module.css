@@ -13,9 +13,19 @@
     font-size: 1.7rem;
     text-align: right;
     margin-right: 40px;
+    font-weight: bold;
 }
 
 .links span{
-    font-weight: bolder;
+    font-weight: normal;
     font-style: italic;
+}
+
+.logo-div{
+    height: 100%;
+    width: 40%;
+}
+
+.logo {
+    height: 100%;
 }

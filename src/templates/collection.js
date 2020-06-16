@@ -56,23 +56,23 @@ const Collection = ({data}) => {
                     <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[0].fluid, 0)}>
                         <Img fluid={collection.galerie[0].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo1}`} alt={collection.galerie[0].title}/>
                     </div>
-                    <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[0].fluid, 1)}>
+                    {collection.galerie[1] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[0].fluid, 1)}>
                         <Img fluid={collection.galerie[1].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo2}`} alt={collection.galerie[1].title}/>
-                    </div>
+                    </div>}
                 </div>
-                <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[2].fluid, 2)}>
+                {collection.galerie[2] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[2].fluid, 2)}>
                     <Img fluid={collection.galerie[2].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo3}`} alt={collection.galerie[2].title}/>
-                </div>
-                <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[3].fluid, 3)}>
+                </div>}
+                {collection.galerie[3] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[3].fluid, 3)}>
                     <Img fluid={collection.galerie[3].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo4}`} alt={collection.galerie[3].title}/>
-                </div>
-                <div className={styles.firstRank}>
-                    <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[4].fluid, 4)}>
+                </div>}
+                <div className={styles.lastRank}>
+                    {collection.galerie[4] &&<div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[4].fluid, 4)}>
                         <Img fluid={collection.galerie[4].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo5}`} alt={collection.galerie[4].title}/>
-                    </div>
-                    <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[5].fluid, 5)}>
+                    </div>}
+                    {collection.galerie[5] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[5].fluid, 5)}>
                         <Img fluid={collection.galerie[5].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo6}`} alt={collection.galerie[5].title}/>
-                    </div>
+                    </div>}
                 </div>
                 {collection.galerie[6] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[6].fluid, 6)}><Img fluid={collection.galerie[6].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo7}`} alt={collection.galerie[6].title}/></div>}
                 {collection.galerie[7] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[7].fluid, 7)}><Img fluid={collection.galerie[7].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo8}`} alt={collection.galerie[7].title}/></div>}

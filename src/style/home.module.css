@@ -17,6 +17,14 @@
     align-items: center;
 }
 
+.title {
+    margin: 0;
+    font-family: 'Crimson Text', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.83em;
+}
+
 .left-div-1 {
     width: 45%;
 }

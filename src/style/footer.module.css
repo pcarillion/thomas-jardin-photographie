@@ -1,0 +1,21 @@
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-div p {
+     margin: 20px 0;
+}
+
+.logo-div{
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px
+}
+
+.logo-dev {
+    height: 60px;
+    width: 60px
+}

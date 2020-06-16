@@ -1,11 +1,12 @@
 /* fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 /* general css */
 
 * {
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Sans-serif';
 }
 
 body {
@@ -49,4 +50,13 @@ a {
     width: 100vw;
     height: 100vh;
     
+}
+
+.index-div > a{
+    height: 200px;
+    width: 500px;
+}
+
+.main-logo {
+    height: 200px;
 }
