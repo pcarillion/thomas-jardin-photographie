@@ -6,7 +6,7 @@ import styles from '../style/video.module.css'
 // js
 import Layout from '../components/Layout'
 
-const video = () => {
+const Video = () => {
     return (
         <Layout>
             <div className={styles.videoDiv}>
@@ -16,4 +16,4 @@ const video = () => {
     )
 }
 
-export default video
+export default Video

@@ -50,6 +50,21 @@ picture:hover {
 
 }
 
+.lastRank{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.lastRank > div {
+    height: 100%;
+    width: 47%;
+}
+
 .photo5 {
     margin-bottom: 5vh;
     height: 70vh;
