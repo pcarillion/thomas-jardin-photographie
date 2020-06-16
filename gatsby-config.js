@@ -16,7 +16,7 @@ module.exports = {
     author: "Thomas Jardin",
     // twitterUsername: "Paul Carillion",
     // image: './static/logosite.png', 
-    // siteUrl: "https://rap-arabe-blog.netlify.app/",
+    siteUrl: "https://thomasjardin-photographie.com/",
   },
   plugins: [
     `gatsby-plugin-sitemap`,
