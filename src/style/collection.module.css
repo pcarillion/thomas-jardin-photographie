@@ -6,11 +6,6 @@
 }
 
 
-
-.photo{
-    height: 70vh;
-}
-
 picture:hover {
     /* cursor: pointer; */
 }
@@ -26,14 +21,14 @@ picture:hover {
 
 .firstRank > div {
     height: 100%;
-    width: 50%;
+    width: 47%;
 }
 
-.photo1{
+.photo-1{
     height: 70vh;
 }
 
-.photo2{
+.photo-2{
     height: 60vh;
 }
 
@@ -66,24 +61,27 @@ picture:hover {
     width: 47%;
 }
 
-.photo5 {
+.photo-5 {
     margin-bottom: 5vh;
     height: 70vh;
     margin-top: 20vh;
 }
 
 
-.photo6 {
+.photo-6 {
     margin-top : 1vh;
+    height: 70vh;
 }
 
 .photo7 {
     margin-left: 20vw;
+    height: 70vh;
 }
 
 .photo8 {
     margin-right: 25vw;
     margin-top: 1vh;
+    height: 70vh;
 }
 
 .close {
@@ -127,6 +125,11 @@ picture:hover {
 }
 
 @media screen and (max-width: 650px) {
+
+    .firstRank > div {
+        width: 47%;
+    }
+
     .photo3{
         margin-left: 10vw;
     }
