@@ -49,3 +49,14 @@ textarea {
     height: 200px;
 }
 
+@media screen and (max-width: 650px) {
+
+
+    .image {
+        height: 50vh;
+    }
+
+    .container > article {
+        margin: 10px 10vw;
+    }
+}

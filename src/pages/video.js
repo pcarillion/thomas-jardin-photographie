@@ -12,7 +12,7 @@ const Video = () => {
         <Layout>
             <SEO title='Vidéo'/>
             <div className={styles.videoDiv}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_1VWFipQD64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className={styles.video} width="560" height="315" src="https://www.youtube.com/embed/_1VWFipQD64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </Layout>
     )
