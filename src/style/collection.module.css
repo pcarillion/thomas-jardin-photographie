@@ -125,3 +125,18 @@ picture:hover {
     }
 
 }
+
+@media screen and (max-width: 650px) {
+    .photo3{
+        margin-left: 10vw;
+    }
+    .photo4 {
+        margin-right: 0vw;
+    }
+    .photo7 {
+        margin-left: 0;
+    }
+    .photo8 {
+        margin-right: 0;
+    }
+}
