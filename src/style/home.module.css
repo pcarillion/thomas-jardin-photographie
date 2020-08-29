@@ -35,7 +35,7 @@
 }
 
 .image-1 {
-    height: 90vh;
+    max-height: 80vh;
 }
 
 .image-2 {
@@ -73,7 +73,7 @@
 }
 
 .image-4 {
-    height: calc(60/100 * 90vh);
+    max-height: calc(60/100 * 90vh);
 }
 
 .image-5 {
@@ -96,7 +96,7 @@
 }
 
 .image-6 {
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .left-div-3 {
@@ -111,9 +111,7 @@
 }
 
 .image-7 {
-    height: 80vh;
-    margin-bottom: 1vh;
-
+    max-height: 80vh;
 }
 
 .image-8 {

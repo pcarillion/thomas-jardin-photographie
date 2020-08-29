@@ -30,11 +30,7 @@ import SEO from '../components/SEO'
 
 const Collection = ({data}) => {
 
-    console.log(data)
-
     const collection = data.collection
-
-    console.log(collection)
 
     const [isOpen, setPic] = useState(false)
 
@@ -78,6 +74,31 @@ const Collection = ({data}) => {
                 </div>
                 {collection.galerie[6] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[6].fluid, 6)}><Img fluid={collection.galerie[6].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo7}`} alt={collection.galerie[6].title}/></div>}
                 {collection.galerie[7] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[7].fluid, 7)}><Img fluid={collection.galerie[7].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo8}`} alt={collection.galerie[7].title}/></div>}
+                {/* repeat more or less the same pattern if there are more than 8 images */}
+                {collection.galerie[8] && <div className={styles.firstRank}>
+                    <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[8].fluid, 8)}>
+                        <Img fluid={collection.galerie[8].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo1}`} alt={collection.galerie[8].title}/>
+                    </div>
+                    {collection.galerie[9] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[9].fluid, 9)}>
+                        <Img fluid={collection.galerie[9].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo2}`} alt={collection.galerie[9].title}/>
+                    </div>}
+                </div>}
+                {collection.galerie[10] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[10].fluid, 10)}>
+                    <Img fluid={collection.galerie[10].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo4}`} alt={collection.galerie[10].title}/>
+                </div>}
+                {collection.galerie[11] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[11].fluid, 11)}>
+                    <Img fluid={collection.galerie[11].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo3}`} alt={collection.galerie[11].title}/>
+                </div>}
+                {collection.galerie[12] && <div className={styles.lastRank}>
+                    {collection.galerie[12] &&<div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[12].fluid, 12)}>
+                        <Img fluid={collection.galerie[12].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo5}`} alt={collection.galerie[12].title}/>
+                    </div>}
+                    {collection.galerie[13] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[13].fluid, 13)}>
+                        <Img fluid={collection.galerie[13].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo6}`} alt={collection.galerie[13].title}/>
+                    </div>}
+                </div>}
+                {collection.galerie[14] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[14].fluid, 14)}><Img fluid={collection.galerie[14].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo7}`} alt={collection.galerie[14].title}/></div>}
+                {collection.galerie[15] && <div className={styles.intDiv} onClick={()=>togglePic(collection.galerie[15].fluid, 15)}><Img fluid={collection.galerie[15].fluid} objectFit="contain" className={`${styles.photo} ${styles.photo8}`} alt={collection.galerie[15].title}/></div>}
             </div>
             {isOpen && <button type="button" onClick={togglePic} className={styles.close}>X</button>}
             {isOpen && <SinglePicture photo={photo} galerie={collection.galerie} i={index}/>}
